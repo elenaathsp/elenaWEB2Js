@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--The browser stops rendering the page when finds a script tag, 
+so it is better to put script tags 
+before the end of the body tag (/body) for speed. Also more important reason is
+to have complete access to the loaded content
+NEVER FORGET THE SEMICOLONS AT THE END OF JS COMMANDS !!!
+If something doesnt behave the way we wont we open the console to chech for errors in js
+We dont put tags inside script tag. But we can use tags inside javascript as parameters
+It is better to use let than var to declare variables
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inserting Javascript</title>
+    <script>
+        //Internal Javascript
+        console.log("Hello from Js");
+        console.log("another line here");
+        //This write something in the document, on the page
+        document.write('<p>This is dynamic content</p>');
+
+    </script>
+    <!--external js file-->
+    <script>src = 'js/myapp.js'</script>
+</head>
+
+<body>
+    <script>
+                //alert("This is an alert message");
+                //alert("This is an second alert message");
+    </script>
+    <script>
+
+    </script>
+    <h1>Inserting Javascript on a page</h1>
+    <!--Create tags with javascript-->
+    <script>
+        //we can have multiline code separated by semicolon
+        document.write('<h1>01</h1>'); document.write('<h1>02</h1>');
+        document.write('<h1>03</h1>');
+        /*
+        document.write('<h1>03</h1>'); 
+        */
+    </script>
+    <script>document.write('<hr/>');</script>
+    <script>document.write('<p>This is the end...</p>');</script>
+    <!--Inline javascript, DONT!-->
+    <h1 onclick="alert(42);"> On click alert </h1>
+    <!--Alert message-->
+
+</body>
+
+</html>
